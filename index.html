@@ -41,8 +41,8 @@
             min-width: 120px;
         }
         .weekly-forecast {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
+            display: flex;
+            overflow-x: auto;
             gap: 10px;
             margin-top: 20px;
         }
@@ -52,6 +52,7 @@
             border-radius: 15px;
             padding: 10px;
             text-align: center;
+            min-width: 80px;
         }
         .sunrise-sunset {
             display: flex;
@@ -179,7 +180,7 @@
             </div>
             <p class="text-xl mb-2" id="temperature"></p>
             <p class="text-gray-600" id="weatherDescription"></p>
-            <div id="temperatureChart" class="mb-6"></div>
+            <div id="temperatureChart" class="mb-6 neumorphism-card"></div>
             <div class="sunrise-sunset">
                 <div class="sunrise-sunset-detail">
                     <i class="fas fa-sun icon-sun"></i>
